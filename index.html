@@ -3,38 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semiat Adeyemi — Cloud Engineer</title>
+  <title>Semiat Boladale — Cloud Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
-   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <nav>
-  <p class="nav-logo">Semiat</p>
+  <p class="nav-logo">Armani</p>
   <ul class="nav-links">
-    <li>Work</li>
-    <li>Thinking</li>
-    <li>Experience</li>
-    <li>Contact</li>
-  </ul>
+  <li><a href="#work">Work</a></li>
+  <li><a href="#thinking">Notes</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+<button class="hamburger" onclick="toggleMenu()">☰</button>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#work" onclick="toggleMenu()">Work</a>
+  <a href="#thinking" onclick="toggleMenu()">Notes</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
 </nav> 
 <section class="hero">
   <div class="hero-content">
-    <p class="hero-tag">Cloud Engineer · Builder · Thinker</p>
+    <p class="hero-tag">Cloud Engineer · Builder </p>
     <h1 class="hero-headline">Hi, I'm <span>Semiat.</span></h1>
     <p class="hero-sub">Building systems that are simple,<br>scalable and intentional.</p>
     <div class="hero-buttons">
       <a href="#work" class="btn-primary">View Projects</a>
-      <a href="#" class="btn-secondary">Resume</a>
+      <a href="SemiatBoladale_2025Resume.docx" download class="btn-secondary">Resume</a>
     </div>
   </div>
   <div class="hero-photo">
     <img src="pink bys3m 1.jpeg" alt="Semiat" />
   </div> 
   <div class="sticky-note sticky-1">
-  <p>"Life is difficult."</p>
-  <span>— The Road Less Traveled</span>
+  <p>"I don't know what I'm doing yet. But i'll figure it out."</p>
+  <span>— Shubomi</span>
 </div>
 
 <div class="sticky-note sticky-2">
@@ -42,33 +50,78 @@
   <span>Because boring systems rarely fail.</span>
 </div>
 </section>
+<section class="explore">
+  <div class="section-inner">
+    <p class="section-tag">Explore</p>
+    <h2 class="section-headline">My world.</h2>
+    <div class="explore-grid">
+      <div class="explore-card" onclick="document.querySelector('#work').scrollIntoView({behavior:'smooth'})">
+       <span class="explore-icon"><i class="fa-solid fa-code"></i></span>
+        <h3>Building</h3>
+        <p>This is where i put the things i've built and the things i've learnt along the way.</p>
+      </div>
+      <div class="explore-card" onclick="document.querySelector('#thinking').scrollIntoView({behavior:'smooth'})">
+        <span class="explore-icon">  <i class="fa-solid fa-brain"></i></span>
+        <h3>Notes</h3>
+        <p>Just my thoughts and ideas.</p>
+      </div>
+      <div class="explore-card" onclick="document.querySelector('#reading').scrollIntoView({behavior:'smooth'})">
+        <span class="explore-icon"><i class="fa-solid fa-book"></i></span>
+        <h3>My Bookshelf</h3>
+        <p>Books that actually stuck with me.</p>
+      </div>
+      <div class="explore-card" onclick="document.querySelector('#experience').scrollIntoView({behavior:'smooth'})">
+        <span class="explore-icon"><i class="fa-solid fa-briefcase"></i></span>
+        <h3>Experience</h3>
+        <p>Where I've worked and what I've made.</p>
+      </div>
+      <div class="explore-card" onclick="document.querySelector('#contact').scrollIntoView({behavior:'smooth'})">
+        <span class="explore-icon"><i class="fa-solid fa-envelope"></i></span>
+        <h3>Say Hi</h3>
+        <p>If you want to talk tech,books,ideas or just say hello.</p>
+      </div>
+    </div>
+  </div>
+</section> 
+<div class="today-note">
+  <p class="today-title">Today</p>
+  <ul class="today-list">
+    <li>☐ CCNA</li>
+    <li>☐ Build</li>
+    <li>☐ Learn</li>
+    <li>☐ Be grateful</li>
+  </ul>
+</div>
 <section class="how-i-think" id="thinking">
   <div class="section-inner">
-    <p class="section-tag">How I Think</p>
-    <h2 class="section-headline">I naturally gravitate<br>toward systems.</h2>
+    <p class="section-tag">How I Build</p> 
+    <h2 class="section-headline">I like to poke at things<br>until they make sense.</h2>
     <div class="thinking-grid">
       <div class="thinking-card">
         <p class="thinking-number">01</p>
-        <h3>Curiosity first.</h3>
-        <p>I ask questions before writing a single line of code. Understanding the problem is half the solution.</p>
+        <h3>I ask questions first.</h3>
+        <p>I like to understand what I'm solving before i start building. Otherwise, what exactly am I solving.</p>
       </div>
       <div class="thinking-card">
         <p class="thinking-number">02</p>
-        <h3>Simplicity wins.</h3>
-        <p>I remove what doesn't add value. Boring systems rarely fail. I'd rather be reliable than impressive.</p>
+        <h3>I keep things simple.</h3>
+        <p>I don't have strength. Less is more. Easy does it. </p>
       </div>
       <div class="thinking-card">
         <p class="thinking-number">03</p>
-        <h3>Build with intention.</h3>
-        <p>Every decision should have a reason. I enjoy breaking complex problems into smaller, deliberate choices.</p>
+        <h3>I figure things out because I'm nosy.</h3>
+        <p>I don't need to know everything before i start. I'll learn what i need, try things out, break a few things, and figure it out</p>
       </div>
     </div>
   </div>
 </section>
+<div class="floating-note note-pink">
+  <p>Apparently, I'm getting better at this.</p>
+</div>
 <section class="currently-thinking" id="thinking-about">
   <div class="section-inner">
-    <p class="section-tag">Currently Thinking About</p>
-    <h2 class="section-headline">What's on my mind.</h2>
+    
+    <h4 class="section-headline">What I'm into.</h4>
     <div class="thinking-list">
       <div class="thinking-item">
         <span class="check">✓</span>
@@ -84,19 +137,19 @@
       </div>
       <div class="thinking-item">
         <span class="check">✓</span>
-        <p>Observability & Reliability</p>
+        <p>Program Management</p>
       </div>
       <div class="thinking-item">
         <span class="check">✓</span>
-        <p>Building systems that are boring. Because boring systems rarely fail.</p>
+        <p>Automation & Infrastructure</p>
       </div>
     </div>
   </div>
 </section>
    <section class="projects" id="work">
   <div class="section-inner">
-    <p class="section-tag">Featured Work</p>
-    <h2 class="section-headline">Things I've built.</h2>
+    <p class="section-tag">Projects I've touched.</p>
+    <h2 class="section-headline">Here are the things <br>i've actually gotten my hands on.</h2>
     
     <div class="project-card">
       <div class="project-header">
@@ -108,7 +161,7 @@
           <span>Render</span>
         </div>
       </div>
-      <p class="project-description">A personal journaling app that provides a simple, private space to record thoughts, emotions, and daily reflections.</p>
+      <p class="project-description">.</p>
       <div class="project-details">
         <div class="project-detail">
           <p class="detail-label">Problem</p>
@@ -177,7 +230,10 @@
     </div>
   </div>
 </div>
-</section> 
+</section>  
+<div class="floating-note note-yellow">
+  <p>Every bug teaches architecture.</p>
+</div>
 <section class="changed-mind" id="reflections">
   <div class="section-inner">
     <p class="section-tag">Things I've Changed My Mind About</p>
@@ -201,46 +257,71 @@
     </div>
   </div>
 </section>
+<section class="big-quote">
+  <div class="section-inner">
+    <p class="quote-mark">"</p>
+    <h2 class="quote-text">Life is not a dialectical idea but a lived contradiction. Live it well.</h2>
+    <p class="quote-source">— The Road Less Traveled</p>
+  </div>
+</section>
+<div class="floating-note note-blue">
+  <p>Progress is a series of small decisions.</p>
+</div>
 <section class="reading" id="reading">
   <div class="section-inner">
     <p class="section-tag">Reading</p>
     <h2 class="section-headline">Books that changed<br>how I build.</h2>
-    <div class="books-grid">
-      <div class="book-card">
-        <div class="book-spine"></div>
-        <div class="book-info">
-          <h3>The Road Less Traveled</h3>
-          <p class="book-author">M. Scott Peck</p>
-          <p class="book-note">Taught me that growth requires facing difficulty head on. I think about this when debugging.</p>
-        </div>
-      </div>
-      <div class="book-card">
-        <div class="book-spine" style="background-color: #C4956A;"></div>
-        <div class="book-info">
-          <h3>Start With Yourself</h3>
-          <p class="book-author">Meera Lee Patel</p>
-          <p class="book-note">Reminded me that self-awareness is a skill. The best engineers know their own blind spots.</p>
-        </div>
-      </div>
-      <div class="book-card">
-        <div class="book-spine" style="background-color: #6A8CAF;"></div>
-        <div class="book-info">
-          <h3>Designing Data-Intensive Applications</h3>
-          <p class="book-author">Martin Kleppmann</p>
-          <p class="book-note">The cloud engineering bible. Changed how I think about reliability and scale.</p>
-        </div>
-      </div>
-      <div class="book-card">
-        <div class="book-spine" style="background-color: #8CAF6A;"></div>
-        <div class="book-info">
-          <h3>Inspired</h3>
-          <p class="book-author">Marty Cagan</p>
-          <p class="book-note">Essential reading for anyone building products. Shapes how I think about what to build and why.</p>
-        </div>
-      </div>
+    <div class="bookshelf">
+      <a href="https://en.wikipedia.org/wiki/The_Road_Less_Travelled" target="_blank" class="book-cover" title="The Road Less Traveled">
+        <div class="book-placeholder"></div>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Inspired_(book)" target="_blank" class="book-cover" title="Inspired">
+        <div class="book-placeholder"></div>
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Designing_Data-Intensive_Applications" target="_blank" class="book-cover" title="Designing Data-Intensive Applications">
+        <div class="book-placeholder"></div>
+      </a>
+      <a href="#" target="_blank" class="book-cover" title="Start With Yourself">
+        <div class="book-placeholder"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
+      <a href="#" class="book-cover book-empty" title="Coming soon">
+        <div class="book-placeholder empty"></div>
+      </a>
     </div>
+    <div class="shelf-base"></div>
   </div>
-</section> 
+</section>
+     
 <section class="experience" id="experience">
   <div class="section-inner">
     <p class="section-tag">Experience</p>
@@ -300,7 +381,14 @@
       </a>
     </div>
   </div>
-</section>
+</section> 
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-logo">Semiat</p>
+    <p class="footer-copy">Built with intention. © 2026 Semiat Adeyemi.</p>
+    <p class="footer-stack">HTML · CSS · JavaScript</p>
+  </div>
+</footer>
  <script src="script.js"></script>
 </body>
 </html>
