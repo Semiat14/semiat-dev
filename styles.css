@@ -873,4 +873,14 @@ a.timeline-company:hover {
     flex-direction: column;
     text-align: center;
   }
+} 
+a.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+a.project-card:hover {
+  transform: translateY(-4px);
 }
