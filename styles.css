@@ -774,6 +774,7 @@ a.timeline-company:hover {
   }
   .bookshelf {
   grid-template-columns: repeat(5, 1fr);
+    gap: 4px; 
 } 
   .nav-links {
     display: none;
