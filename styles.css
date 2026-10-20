@@ -618,6 +618,7 @@ nav {
 }
 
 .book-placeholder {
+  display: block;
   width: 100%;
   aspect-ratio: 2/3;
   background-color: #E8A4B8;
@@ -786,8 +787,13 @@ a.timeline-company:hover {
 
   .hero {
     flex-direction: column;
+    align-items: stretch;
     padding: 120px 24px 60px;
     gap: 40px;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
   }
 
   .hero-photo {
@@ -859,6 +865,10 @@ a.timeline-company:hover {
     grid-template-columns: 1fr;
   }
 
+  .project-card {
+    padding: 28px 24px;
+  }
+
   .project-details {
     grid-template-columns: 1fr;
   }
@@ -897,6 +907,7 @@ a.project-card:hover {
 } 
 .photo-collage {
   padding: 60px;
+  overflow: hidden;
   background-color: #FAF8F4;
 }
 
@@ -935,3 +946,22 @@ a.project-card:hover {
   border-radius: 4px 8px 8px 4px;
   box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
 } 
+/* MOBILE (rules that must come after the base styles above) */
+@media (max-width: 768px) {
+  .photo-collage {
+    padding: 40px 24px;
+  }
+
+  .collage-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .collage-img {
+    height: 360px;
+  }
+
+  .section-headline br {
+    display: none;
+  }
+}
