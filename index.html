@@ -4,6 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Semiat Boladale — Cloud Engineer</title>
+  <meta name="description" content="Semiat Boladale is a cloud engineer building systems that are simple, scalable and intentional." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Link previews (LinkedIn, WhatsApp, X, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://semiat-dev-m82l.vercel.app/" />
+  <meta property="og:title" content="Semiat Boladale — Cloud Engineer" />
+  <meta property="og:description" content="Building systems that are simple, scalable and intentional." />
+  <meta property="og:image" content="https://semiat-dev-m82l.vercel.app/pinkbys3m1.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -97,82 +107,11 @@
     <p class="section-tag">Projects I've touched.</p>
     <h2 class="section-headline">Here are the things <br>I've actually gotten my hands on.</h2>
 
-    <a href="https://thegooddump.netlify.app" target="_blank" class="project-card">
-      <div class="project-header">
-        <h3>The Good Dump</h3>
-        <div class="project-tags">
-          <span>Node.js</span>
-          <span>MongoDB</span>
-          <span>JavaScript</span>
-          <span>Render</span>
-        </div>
-      </div>
-      <p class="project-description">A simple journaling app I built because sometimes you just need somewhere to dump your thoughts.</p>
-      <div class="project-details">
-        <div class="project-detail">
-          <p class="detail-label">Role</p>
-          <p>Full-Stack Developer</p>
-        </div>
-        <div class="project-detail">
-          <p class="detail-label">Why I built it</p>
-          <p>I just wanted somewhere to dump my thoughts. Nothing complicated.</p>
-        </div>
-        <div class="project-detail">
-          <p class="detail-label">What I learned</p>
-          <p>I’m getting more comfortable with building the backend side of an application, working with data, connecting the different parts of the app, and figuring things out when something inevitably refuses to work.</p>
-        </div>
-      </div>
-    </a>
-
-    <a href="https://sabitalk.com" target="_blank" class="project-card">
-      <div class="project-header">
-        <h3>Sabi Talk</h3>
-        <div class="project-tags">
-          <span>AWS</span>
-          <span>Docker</span>
-          <span>Linux</span>
-        </div>
-      </div>
-      <p class="project-description">A Duolingo-style app for learning traditional Nigerian languages. Built to preserve culture through technology.</p>
-      <div class="project-details">
-        <div class="project-detail">
-          <p class="detail-label">Role</p>
-          <p>Cloud Engineer</p>
-        </div>
-        <div class="project-detail">
-          <p class="detail-label">What I handled</p>
-          <p>I set up the infrastructure, got the app deployed and running, and worked with AWS to handle the cloud side of the project.</p>
-        </div>
-        <div class="project-detail">
-          <p class="detail-label">What I learned</p>
-          <p>I got more comfortable with cloud infrastructure and the challenges of deploying and maintaining applications at scale.</p>
-        </div>
-      </div>
-    </a>
-
-    <a href="https://postfitpic.com" target="_blank" class="project-card">
-      <div class="project-header">
-        <h3>FitPic</h3>
-        <div class="project-tags">
-          <span>Program Management</span>
-        </div>
-      </div>
-      <p class="project-description">A fashion discovery app that helps users find, save and organize outfit inspiration.</p>
-      <div class="project-details">
-        <div class="project-detail">
-          <p class="detail-label">Role</p>
-          <p>COO & Program Manager</p>
-        </div>
-        <div class="project-detail">
-          <p class="detail-label">What I handle</p>
-          <p>Planning, coordinating the team, and keeping things moving.</p>
-        </div>
-        <div class="project-detail">
-          <p class="detail-label">What I'm learning</p>
-          <p>I'm learning that having a good idea is one thing. Figuring out how to actually build it is a whole other thing.</p>
-        </div>
-      </div>
-    </a>
+    <!-- Project cards are generated from the `projects` list in script.js -->
+    <div class="project-list" id="projectList"></div>
+    <noscript>
+      <p class="project-description">Turn on JavaScript to see my projects, or find them on <a href="https://github.com/Semiat14">GitHub</a>.</p>
+    </noscript>
   </div>
 </section>
 
@@ -320,6 +259,10 @@
         </div>
       </div>
     </div>
+
+    <h3 class="sub-headline">Certifications</h3>
+    <!-- Certification cards are generated from the `certifications` list in script.js -->
+    <div class="cert-list" id="certList"></div>
   </div>
 </section> 
 <section class="contact" id="contact">
